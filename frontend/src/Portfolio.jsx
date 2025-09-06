@@ -83,17 +83,17 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section id="about" className="py-20 px-8 bg-black">
+      <section id="about" className="py-20 px-6 sm:px-8 bg-black">
         <h3 className="text-4xl font-bold mb-10 text-center">About</h3>
-        <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto items-center">
+        <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto items-start">
           <div>
             <p className="font-bold text-lg py-2">WHO AM I</p>
-            <p className="  font-italic text-gray-300">
+            <p className="italic text-gray-300">
               I am a MERN-stack developer who loves making simple and user-friendly
               websites. I am learning new skills and working on projects to start my
               career in web development.
             </p>
-            <br></br>
+            <br />
             <p className="font-bold text-lg py-2">EDUCATION</p>
             <p className="font-semibold text-gray-300">
               📖B.E. Computer Science and Engineering — Mepco Schlenk Engg. College
@@ -105,7 +105,7 @@ export default function Portfolio() {
             <p className="font-semibold text-gray-300 mt-2">
               📖SSLC — S.E.V. School, Madurai (2017 - 2018) | 70.4%
             </p>
-            <br></br>
+            <br />
             <p className="font-bold text-lg py-2">COURSES</p>
             <p className="font-semibold text-gray-300">
               • AWS Cloud Practitioner (2024)
@@ -119,66 +119,48 @@ export default function Portfolio() {
           </div>
 
           <div>
-            <div className="space-y-2">
+            <div className="space-y-4">
               <p className="font-bold text-lg">SKILLS</p>
 
               <div>
                 <p>HTML & CSS</p>
                 <div className="w-full bg-gray-800 rounded-full h-2">
-                  <div
-                    className="bg-gradient-to-r from-pink-500 to-orange-500 h-2 rounded-full"
-                    style={{ width: "350px" }}
-                  ></div>
+                  <div className="bg-gradient-to-r from-pink-500 to-orange-500 h-2 rounded-full w-[90%]"></div>
                 </div>
               </div>
 
               <div>
                 <p>JavaScript</p>
                 <div className="w-full bg-gray-800 rounded-full h-2">
-                  <div
-                    className="bg-gradient-to-r from-pink-500 to-orange-500 h-2 rounded-full"
-                    style={{ width: "300px" }}
-                  ></div>
+                  <div className="bg-gradient-to-r from-pink-500 to-orange-500 h-2 rounded-full w-[80%]"></div>
                 </div>
               </div>
 
               <div>
                 <p>React JS</p>
                 <div className="w-full bg-gray-800 rounded-full h-2">
-                  <div
-                    className="bg-gradient-to-r from-pink-500 to-orange-500 h-2 rounded-full"
-                    style={{ width: "320px" }}
-                  ></div>
+                  <div className="bg-gradient-to-r from-pink-500 to-orange-500 h-2 rounded-full w-[85%]"></div>
                 </div>
               </div>
 
               <div>
                 <p>Node JS</p>
                 <div className="w-full bg-gray-800 rounded-full h-2">
-                  <div
-                    className="bg-gradient-to-r from-pink-500 to-orange-500 h-2 rounded-full"
-                    style={{ width: "360px" }}
-                  ></div>
+                  <div className="bg-gradient-to-r from-pink-500 to-orange-500 h-2 rounded-full w-[95%]"></div>
                 </div>
               </div>
 
               <div>
                 <p>Express JS</p>
                 <div className="w-full bg-gray-800 rounded-full h-2">
-                  <div
-                    className="bg-gradient-to-r from-pink-500 to-orange-500 h-2 rounded-full"
-                    style={{ width: "360px" }}
-                  ></div>
+                  <div className="bg-gradient-to-r from-pink-500 to-orange-500 h-2 rounded-full w-[95%]"></div>
                 </div>
               </div>
 
               <div>
                 <p>MongoDB</p>
                 <div className="w-full bg-gray-800 rounded-full h-2">
-                  <div
-                    className="bg-gradient-to-r from-pink-500 to-orange-500 h-2 rounded-full"
-                    style={{ width: "300px" }}
-                  ></div>
+                  <div className="bg-gradient-to-r from-pink-500 to-orange-500 h-2 rounded-full w-[80%]"></div>
                 </div>
               </div>
             </div>
@@ -201,8 +183,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* PROJECTS */}
-      {/* (Keeping your project code the same, not repeated here for brevity) */}
+      {/* PROJECTS (same as your existing) */}
 
       <section id="contact" className="py-20 px-8 bg-black">
         <h3 className="text-4xl font-bold mb-10 text-center">

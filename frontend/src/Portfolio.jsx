@@ -23,6 +23,7 @@ export default function Portfolio() {
 
   return (
     <div className="bg-black text-white font-sans scroll-smooth overflow-x-hidden">
+      {/* HEADER */}
       <header className="grid grid-cols-3 items-center px-8 py-4 sticky top-0 bg-black z-50">
         <h1 className="text-2xl font-bold">
           <span className="text-pink-500">SuDha</span>N.
@@ -49,6 +50,7 @@ export default function Portfolio() {
         </div>
       </header>
 
+      {/* HOME */}
       <section id="home" className="grid place-items-center text-center py-20">
         <img
           src="me.png"
@@ -83,6 +85,7 @@ export default function Portfolio() {
         </div>
       </section>
 
+      {/* ABOUT */}
       <section id="about" className="py-20 px-6 sm:px-8 bg-black">
         <h3 className="text-4xl font-bold mb-10 text-center">About</h3>
         <div className="grid md:grid-cols-2 gap-10 max-w-5xl mx-auto items-start">
@@ -183,8 +186,136 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* PROJECTS (same as your existing) */}
+      {/* PROJECTS */}
+      <section id="project" className="py-20 px-8">
+        <h3 className="text-4xl font-bold mb-10 text-center">
+          My latest <span className="text-pink-500">work</span>
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+          {/* Hospital Management */}
+          <div className="h-auto bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition duration-500 ease-in-out">
+            <img src="hospi.png" alt="Hospital Management" className="w-full h-[200px] rounded-lg" />
+            <p className="text-xl font-semibold py-4 text-center">Hospital Management System</p>
+            <p className="text-gray-300 text-center ml-2">
+              A software to manage hospital operations, patients, doctors, and staff efficiently and securely.
+            </p>
+            <p className="text-center mt-2 text-white font-semibold">Front End</p>
+            <div className="grid grid-flow-col">
+              <p className="ml-12 mt-2 px-2 py-2 bg-blue-200 text-black font-semibold w-[125px] rounded-3xl text-center">
+                React JS + Vite
+              </p>
+              <p className="mt-2 ml-[-10px] px-2 py-2 bg-blue-200 text-black font-semibold w-[120px] rounded-3xl text-center">
+                Tailwind CSS
+              </p>
+            </div>
+            <p className="text-center mt-2 font-semibold">Back End</p>
+            <div className="grid grid-flow-col">
+              <p className="ml-12 mt-2 px-2 py-2 bg-blue-200 text-black font-semibold w-[125px] rounded-3xl text-center">
+                Express JS
+              </p>
+              <p className="ml-[-10px] mt-2 px-2 py-2 bg-blue-200 text-black font-semibold w-[125px] rounded-3xl text-center">
+                Mongo DB
+              </p>
+            </div>
+            <div className="flex gap-4 justify-center mt-12">
+              <a
+                href="https://github.com/SudhanAK/Hospital-Management-System"
+                target="_blank"
+                className="flex items-center gap-2 text-black font-bold bg-gradient-to-r from-blue-400 to-blue-700 px-4 py-2 rounded-lg text-xl hover:scale-105 transition-transform"
+              >
+                <img className="w-6 h-6" src="github (1).png" alt="GitHub" /> Code
+              </a>
+              <a
+                href="https://sudhanak.github.io/Hospital-Management-System/#/"
+                target="_blank"
+                className="flex items-center gap-2 text-black font-bold bg-gradient-to-r from-blue-400 to-blue-700 px-4 py-2 rounded-lg text-xl hover:scale-105 transition-transform"
+              >
+                <img className="w-6 h-6" src="monitor.png" alt="Live Demo" /> Demo
+              </a>
+            </div>
+            <br />
+          </div>
 
+          {/* E-Commerce */}
+          <div className="h-auto bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition duration-500 ease-in-out">
+            <img src="ecommerce.jpeg" alt="E-Commerce Website" className="w-full h-[200px] rounded-lg" />
+            <p className="text-xl font-semibold py-4 text-center">E-Commerce Website</p>
+            <p className="text-gray-300 text-center ml-2">
+              An online store offering a wide range of quality products at the best prices, delivered to your door.
+            </p>
+            <p className="text-center mt-2 text-white font-semibold">Front End</p>
+            <div className="grid grid-flow-col">
+              <p className="ml-12 mt-2 px-2 py-2 bg-orange-200 text-black font-semibold w-[125px] rounded-3xl text-center">
+                React JS
+              </p>
+              <p className="mt-2 ml-[-10px] px-2 py-2 bg-orange-200 text-black font-semibold w-[120px] rounded-3xl text-center">
+                CSS
+              </p>
+            </div>
+            <p className="text-center mt-2 font-semibold">Back End</p>
+            <div className="grid grid-flow-col">
+              <p className="ml-12 mt-2 px-2 py-2 bg-orange-200 text-black font-semibold w-[125px] rounded-3xl text-center">
+                Rapid API
+              </p>
+            </div>
+            <div className="flex gap-4 justify-center mt-12">
+              <a
+                href="https://github.com/SudhanAK/Ecommerce-Application"
+                target="_blank"
+                className="flex items-center gap-2 text-black font-bold bg-gradient-to-r from-blue-400 to-blue-700 px-4 py-2 rounded-lg text-xl hover:scale-105 transition-transform"
+              >
+                <img className="w-6 h-6" src="github (1).png" alt="GitHub" /> Code
+              </a>
+              <a
+                href="https://sudhanak.github.io/Ecommerce-Application/#/"
+                target="_blank"
+                className="flex items-center gap-2 text-black font-bold bg-gradient-to-r from-blue-400 to-blue-700 px-4 py-2 rounded-lg text-xl hover:scale-105 transition-transform"
+              >
+                <img className="w-6 h-6" src="monitor.png" alt="Live Demo" /> Demo
+              </a>
+            </div>
+            <br />
+          </div>
+
+          {/* E-Learning */}
+          <div className="h-auto bg-gray-800 rounded-lg overflow-hidden hover:scale-105 transition duration-500 ease-in-out">
+            <img src="elearning.png" alt="E-Learning Platform" className="w-full h-[200px] rounded-lg" />
+            <p className="text-xl font-semibold py-4 text-center">E-Learning Platform</p>
+            <p className="text-gray-300 text-center ml-2">
+              An e-learning platform with interactive courses, user-friendly design, and seamless content access for students.
+            </p>
+            <br />
+            <p className="text-center mt-8 text-white font-semibold">Front End</p>
+            <div className="grid grid-flow-col">
+              <p className="ml-12 mt-2 px-2 py-2 bg-blue-400 text-black font-semibold w-[125px] rounded-3xl text-center">
+                HTML
+              </p>
+              <p className="mt-2 ml-[-10px] px-2 py-2 bg-blue-400 text-black font-semibold w-[120px] rounded-3xl text-center">
+                CSS
+              </p>
+            </div>
+            <div className="flex gap-4 justify-center mt-12">
+              <a
+                href="https://github.com/SudhanAK/E-Learning-Platform"
+                target="_blank"
+                className="flex items-center gap-2 text-black font-bold bg-gradient-to-r from-blue-400 to-blue-700 px-4 py-2 rounded-lg text-xl hover:scale-105 transition-transform"
+              >
+                <img className="w-6 h-6" src="github (1).png" alt="GitHub" /> Code
+              </a>
+              <a
+                href="https://sudhanak.github.io/E-Learning-Platform/"
+                target="_blank"
+                className="flex items-center gap-2 text-black font-bold bg-gradient-to-r from-blue-400 to-blue-700 px-4 py-2 rounded-lg text-xl hover:scale-105 transition-transform"
+              >
+                <img className="w-6 h-6" src="monitor.png" alt="Live Demo" /> Demo
+              </a>
+            </div>
+            <br />
+          </div>
+        </div>
+      </section>
+
+      {/* CONTACT */}
       <section id="contact" className="py-20 px-8 bg-black">
         <h3 className="text-4xl font-bold mb-10 text-center">
           Get in <span className="text-pink-500">touch</span>
@@ -217,9 +348,7 @@ export default function Portfolio() {
               placeholder="Your Email"
               className="w-full p-3 rounded-lg bg-gray-800 border border-gray-700"
               required
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
             />
-
             <textarea
               value={message}
               onChange={(e) => setMessage(e.target.value)}
@@ -228,7 +357,6 @@ export default function Portfolio() {
               rows="4"
               required
             ></textarea>
-
             <button
               type="submit"
               className="bg-gradient-to-r from-pink-500 to-orange-500 px-6 py-2 rounded-full w-full"
@@ -239,7 +367,7 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <footer className="bg-black text-gray-400 text-center py-8 mt-20 border-t border-gray-800">
+       <footer className="bg-black text-gray-400 text-center py-8 mt-20 border-t border-gray-800">
         <h3 className="text-2xl font-bold text-white mb-2">
           Let’s Create Something Great
         </h3>
@@ -248,7 +376,6 @@ export default function Portfolio() {
           projects. If you’re looking for a passionate fresher with strong skills,
           let’s work together!
         </p>
-
         <p className="text-sm mb-1">
           Crafted with ❤️ using{" "}
           <span className="text-pink-500 font-semibold">React.js</span> &{" "}
